@@ -1,0 +1,17 @@
+server:
+  port: 8001
+spring:
+  cloud:
+    config:
+      enabled: false
+  application:
+    name: webclientfeign
+eureka:
+  client:
+    enabled: true
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    hostname: localhost
+    appname: webclientfeign
+
